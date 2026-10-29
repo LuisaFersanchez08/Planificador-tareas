@@ -66,14 +66,12 @@
 
         <!--form-->
         <section>
-
-            <form id="formulario-tareas">
-
-            <div class="  my-5 container form mb-3">
+    <form id="formulario-tareas">
+        <div class="my-4 ms-4" style="max-width: 620px;">
+            <div class="form my-5 py-4 container-fluid me-auto" style="max-width: 600px;">
+                
                 <label for="exampleFormControlInput1" class="form-label text-white">Nueva Tarea</label>
-                <input class="form-control rounded-4" type="text" placeholder="Escribe tu nueva tarea"
-                    aria-label="default input example">
-
+                <input class="form-control rounded-4" type="text" placeholder="Escribe tu nueva tarea" aria-label="default input example">
 
                 <select class="my-3 py-2 form-select form-select-sm rounded-4" aria-label="Small select example">
                     <option selected>Selecciona un estado</option>
@@ -82,28 +80,34 @@
                     <option value="3">Completado</option>
                 </select>
 
-
                 <label for="exampleFormControlTextarea1" class="my-2 form-label text-white">Example textarea</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 
-
                 <label for="exampleFormControlInput1" class="my-3 form-label text-white">Categoría</label>
                 <select class="my-3 py-2 form-select form-select-sm rounded-4" aria-label="Small select example">
-
-                    
                     <option selected>Selecciona una categoría</option>
                     <option value="1">Trabajo</option>
                     <option value="2"> Estudio</option>
                     <option value="3">Personal</option>
-                    <option value="3">Hogar</option>
-                    <option value="3">Otro</option>
+                    <option value="4">Hogar</option>
+                    <option value="5">Otro</option>
                 </select>
 
+                <label for="fecha" class="form-label text-white">Fecha Inicio</label>
+                <input type="date" class="form-control bg-light text-dark border-secondary" id="fecha" name="fecha">
+
+                <label for="fecha" class="form-label text-white">Fecha Final</label>
+                <input type="date" class="form-control bg-light text-dark border-secondary" id="fecha" name="fecha">
+
+                <div class="my-3 py-4 text-center">
+                    <button type="button" class="btn btn-light btn-lg">Agregar</button>
+                    <button type="button" class="btn btn-light btn-lg">Limpiar</button>
+                </div>
+
             </div>
-            </form>
-
-
-        </section>
+        </div>
+    </form>
+</section>
 
 
 
