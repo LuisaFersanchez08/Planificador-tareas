@@ -1,53 +1,95 @@
 :root {
     --fuente-titulos: "Limelight", sans-serif;
-    --font: 600;
-    --font-style: normal;
+    --fuente-texto: "Overlock", cursive, sans-serif;
     --color-titulos: #F2F1F0;
-    --fuente-texto: "Overlock", sans-serif;
-
 }
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: var(--altura-navbar);
 }
 
 body {
-    background-image: url('/Planificador-tareas/itsuu.jpg');
+    background-image: url('/Planificador-tareas/img/itsuu.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    font-family: var(--fuente-texto);
 }
 
-.banner {
 
+.banner {
     background: rgba(20, 20, 20, 0.4);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border: 1px solid rgba(255, 255, 255, 0.15);
-
 }
-
 
 .banner h1 {
     color: pink;
     font-family: var(--fuente-titulos);
-    font-weight: var(--font);
-    font-style: var(--font-style);
-    font-size: 70px;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 50px;/
 }
 
-p {
-    font-size: 30px;
-    font-weight: 400;
-    font-style: normal;
+.banner p {
+    font-size: 1.25rem;
     color: #F2F1F0;
+    font-family: var(--fuente-texto);
 }
+
 
 .form {
     background: rgba(20, 20, 20, 0.4);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+
+#formulario-tareas label,
+#formulario-tareas input,
+#formulario-tareas select,
+#formulario-tareas textarea {
+    font-family: var(--fuente-texto);
+}
+
+.container-tareas {
+    background: rgba(20, 20, 20, 0.4);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+}
+
+
+.card {
+    background: rgba(95, 92, 92, 0.4);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 15px solid rgba(255, 255, 255, 0.15);
+}
+
+.card-body1 {
+    background: rgba(128, 122, 122, 0.4);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: pink;
+    font-family: var(--fuente-texto);
+    border-color: rgb(238, 72, 216);
+}
+
+
+.span {
+    background: rgba(128, 122, 122, 0.4);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 2px;
+}
+h2{
+    color: pink;
+    font-family: var(--fuente-texto);
 }
