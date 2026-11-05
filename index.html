@@ -31,6 +31,8 @@
         <div class="banner p-4 rounded-4 shadow-sm text-center">
             <h1>Planificador de tareas</h1>
             <p>Bienvenido a tu espacio donde organizarás tus ideas y tu día</p>
+
+
         </div>
     </header>
 
@@ -41,13 +43,19 @@
 
 
                 <div class="col-md-4 mb-4">
-                    <form id="formulario-tareas" class="p-4 rounded-4 shadow text-white form">
+                    <form id="formulario-tareas" novalidate class="p-4 rounded-4 shadow text-white form">
 
 
                         <div class="mb-3">
                             <label for="nombre-tarea" class="form-label">Nueva Tarea</label>
                             <input id="nombre-tarea" class="form-control rounded-4" type="text"
                                 placeholder="Escribe tu nueva tarea">
+
+                            <div id="errorNombre" class="alert alert-danger d-none">
+                                El nombre de la tarea no puede estar vacío.
+                            </div>
+
+
                         </div>
 
 
@@ -66,6 +74,10 @@
                             <label for="descripcion-tarea" class="form-label">Descripción</label>
                             <textarea class="form-control rounded-4" id="descripcion-tarea" rows="3"
                                 placeholder="Detalles de la tarea..."></textarea>
+
+                            <div id="errorDescripcion" class="alert alert-danger d-none">
+                                La descripcion es obligatoria
+                            </div>
                         </div>
 
 
@@ -86,6 +98,10 @@
                             <label for="fecha-inicio" class="form-label">Fecha Inicio</label>
                             <input type="date" class="form-control bg-light text-dark border-secondary rounded-4"
                                 id="fecha-inicio" name="fecha-inicio">
+
+                            <div id="errorFecha" class="alert alert-danger d-none">
+                                La fecha es obligatoria
+                            </div>
                         </div>
 
 
@@ -93,11 +109,16 @@
                             <label for="fecha-final" class="form-label">Fecha Final</label>
                             <input type="date" class="form-control bg-light text-dark border-secondary rounded-4"
                                 id="fecha-final" name="fecha-final">
+
+                            <div id="errorFecha1" class="alert alert-danger d-none">
+                                La fecha es obligatoria
+                            </div>
                         </div>
 
 
                         <div class="my-4 text-center">
-                            <button type="submit" class="btn btn-light btn-lg px-4 me-2">Agregar</button>
+                            <button id="btn-agregar" type="submit"
+                                class="btn btn-light btn-lg px-4 me-2">Agregar</button>
                             <button type="reset" class="btn btn-outline-light btn-lg px-4">Limpiar</button>
                         </div>
 
@@ -120,7 +141,7 @@
 
                                     </div>
 
-                                    <h5 class="card-title">Añair seccion de lista</h5>
+                                    <h5 class="card-title">Añadir seccion de lista</h5>
                                     <p class="card-text">Dejar el commit en el repositorio</p>
 
 
@@ -165,7 +186,7 @@
 
                                     </div>
 
-                                    <h5 class="card-title">Añair seccion de lista</h5>
+                                    <h5 class="card-title">Añadir seccion de lista</h5>
                                     <p class="card-text">Dejar el commit en el repositorio</p>
 
 
@@ -188,7 +209,7 @@
 
                                     </div>
 
-                                    <h5 class="card-title">Añair seccion de lista</h5>
+                                    <h5 class="card-title">Añadir seccion de lista</h5>
                                     <p class="card-text">Dejar el commit en el repositorio</p>
 
 
@@ -263,6 +284,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         crossorigin="anonymous"></script>
+
+    <script src="/Planificador-tareas/Js/app.js"></script>
 
 </body>
 
