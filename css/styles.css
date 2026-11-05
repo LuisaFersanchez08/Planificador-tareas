@@ -19,7 +19,7 @@ body {
 
 
 .banner {
-    background: rgba(20, 20, 20, 0.4);
+    background: rgba(221, 143, 231, 0.4);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border: 1px solid rgba(255, 255, 255, 0.15);
@@ -41,7 +41,7 @@ body {
 
 
 .form {
-    background: rgba(20, 20, 20, 0.4);
+    background-color: rgba(221, 143, 231, 0.4);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border: 1px solid rgba(255, 255, 255, 0.15);
@@ -72,7 +72,7 @@ body {
 }
 
 .card-body1 {
-    background: rgba(128, 122, 122, 0.4);
+    background: rgba(221, 143, 231, 0.4);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border: 1px solid rgba(255, 255, 255, 0.15);

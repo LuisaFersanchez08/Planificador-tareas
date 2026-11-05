@@ -4,7 +4,7 @@ PLANIFICADOR DE TAREAS
 
 Nombre: Luisa Fernanda Sánchez
 
-Accede a mi planificador de tareas donde podrás organizar tu día a día acompañado de frases motivaciones de mi artista favorita "Dua Lipa" (esta sección aún me falta agregarla).
+Accede a mi planificador de tareas donde podrás organizar tu día a día acompañado de frases motivacionales de mi artista favorita "Dua Lipa" (esta sección aún me falta agregarla).
 
 
 Enlaces de entrega:
