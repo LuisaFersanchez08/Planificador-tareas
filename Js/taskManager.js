@@ -5,7 +5,6 @@ export class TaskManager {
         this.currentId = currentId;
     }
 
-
     addTask(name, description, dueDate, status, category) {
         this.currentId++;
 
@@ -22,11 +21,9 @@ export class TaskManager {
         this.save();
     }
 
-
     save() {
         localStorage.setItem('tasks', JSON.stringify(this.tasks));
     }
-
 
     load() {
         const savedTasks = localStorage.getItem('tasks');
@@ -41,6 +38,18 @@ export class TaskManager {
     }
 
 
+    getTaskById(taskId) {
+        let foundTask;
+
+        for (let task of this.tasks) {
+            if (task.id === taskId) {
+                foundTask = task;
+            }
+        }
+
+        return foundTask;
+    }
+
     toggleTaskCompletion(id) {
         const task = this.tasks.find(task => task.id === id);
 
@@ -49,7 +58,6 @@ export class TaskManager {
             this.save();
         }
     }
-
 
     deleteTask(taskId) {
         this.tasks = this.tasks.filter(task => task.id !== taskId);
@@ -112,9 +120,6 @@ export class TaskManager {
             columna.querySelector('.card-text').textContent =
                 task.description;
 
-            const botonCompletar =
-                columna.querySelector('.btn-completar');
-
             const botonEliminar =
                 columna.querySelector('.btn-eliminar');
 
@@ -123,21 +128,15 @@ export class TaskManager {
 
             if (task.completed) {
                 tarjeta.classList.add('completada');
-                botonCompletar.textContent = 'Marcar como pendiente';
             }
-
-            botonCompletar.addEventListener('click', () => {
-                this.toggleTaskCompletion(task.id);
-                this.mostrarTareas(contenedor);
-            });
 
             botonEliminar.addEventListener('click', () => {
                 this.deleteTask(task.id);
                 this.mostrarTareas(contenedor);
             });
 
-            
             contenedor.appendChild(columna);
         });
     }
 }
+
